@@ -1,2 +1,3 @@
 # PythonForML
-Machine Learning class
+This repository contains lecture notes and code samples for ML class
+
