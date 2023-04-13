@@ -39,7 +39,7 @@ to_keep=[i for i in data_vars if i not in cat_vars]
 
 #final data columns
 data_final=data[to_keep]
-#data_final.drop(['loan_loan applicant_id'], axis=1, inplace=True)
+data_final.drop(['loan_applicant_id'], axis=1, inplace=True)
 #Over-sampling using SMOTE (Synthetic Minority Oversampling Technique)
 #see this tutorial for unbalance data handling
 #https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
@@ -61,6 +61,8 @@ print('\033[1m Proportion of no default data in oversampled data is ',len(os_dat
 print('\033[1m Proportion of default data in oversampled data is ',len(os_data_y[os_data_y['y']==1])/len(os_data_X))
 
 #feature selection using RFE - recursive feature elimination
+#tutorial on computing feature importance
+#https://machinelearningmastery.com/calculate-feature-importance-with-python/
 data_final_vars=data_final.columns.values.tolist()
 y=['y']
 X=[i for i in data_final_vars if i not in y]
