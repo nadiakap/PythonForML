@@ -7,3 +7,5 @@ links to supporting theory and software
    https://elibrary.ru/contents.asp?id=34066118
 3. S.Yu. Beletskaya
     https://cyberleninka.ru/article/n/adaptivnye-poiskovye-algoritmy-obucheniya-iskusstvennyh-neyronnyh-setey/viewer
+4. Very good paper on Bayesian optimization and Automated Machine Learning
+   https://arxiv.org/pdf/1012.2599.pdf
